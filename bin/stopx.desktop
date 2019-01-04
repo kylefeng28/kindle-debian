@@ -1,0 +1,7 @@
+[Desktop Entry]
+Categories=Network;InstantMessaging;GTK;GNOME;
+Name=Stop Debian
+Version=1.0
+Exec=sudo stop-x
+Terminal=false
+Type=Application

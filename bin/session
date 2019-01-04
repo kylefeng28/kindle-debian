@@ -1,0 +1,5 @@
+#!/bin/sh
+(while matchbox-desktop -theme ffportraitdos; do echo; done) &
+matchbox-keyboard -d &
+matchbox-panel --titlebar --start-applets=notify,startup,startup-notify --end-applets=keyboard,systray &
+exec matchbox-window-manager -theme ffportraitdos -use_desktop_mode decorated -use_dialog_mode const-horiz $@

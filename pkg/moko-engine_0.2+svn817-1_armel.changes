@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 16 Jul 2009 15:11:22 +0200
+Source: moko-engine
+Binary: moko-engine
+Architecture: source armel
+Version: 0.2+svn817-1
+Distribution: unstable
+Urgency: low
+Maintainer: Pierre Pronchery <khorben@hackable1.org>
+Changed-By: Sebastien Bocahu <sbocahu@bearstech.com>
+Description: 
+ moko-engine - Openmoko Gtk+ theme engine
+Changes: 
+ moko-engine (0.2+svn817-1) unstable; urgency=low
+ .
+   * Migrated to internal SVN
+Checksums-Sha1: 
+ 67b01aa240b779003bfe87f1020039646fe176b8 934 moko-engine_0.2+svn817-1.dsc
+ cc375139d400229624c4e743e0b7eeadbccff43e 486299 moko-engine_0.2+svn817.orig.tar.gz
+ 187dd08945b9e25ffb9712034921b133700d0c20 2145 moko-engine_0.2+svn817-1.diff.gz
+ d342d19b78e53a6e658fd0a97b78b913681a80b4 170648 moko-engine_0.2+svn817-1_armel.deb
+Checksums-Sha256: 
+ 834183b172fd30e9dcb84fe549360e305c5f32e99a3078fd06c0acc2eed59f9a 934 moko-engine_0.2+svn817-1.dsc
+ 68f64a939d710e82ac1127240167c9d924a10712bf47ce7e4f8d6a72d2781866 486299 moko-engine_0.2+svn817.orig.tar.gz
+ 3ebb52d454eee66f4a603e422c243ee35e896c7fa684251e51a70fcc93e07878 2145 moko-engine_0.2+svn817-1.diff.gz
+ b36fcc45c003bf9f37c2ac553ae6ceb88d6dd5dca1228dc74e2c2f69eec30ba2 170648 moko-engine_0.2+svn817-1_armel.deb
+Files: 
+ 1596d37b68de309a940fe4c3c53bf9d3 934 graphics extra moko-engine_0.2+svn817-1.dsc
+ bccd8056cbf73f25f9a9ace045c81b5f 486299 graphics extra moko-engine_0.2+svn817.orig.tar.gz
+ 8a50bb552f09e2d43c6e4cadf4579a65 2145 graphics extra moko-engine_0.2+svn817-1.diff.gz
+ 68c707d138ae739534dcf016c76751c0 170648 graphics extra moko-engine_0.2+svn817-1_armel.deb

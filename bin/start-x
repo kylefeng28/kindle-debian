@@ -1,0 +1,9 @@
+#!/bin/bash
+export DISPLAY=:0
+Xephyr :1 -title "L:A_N:application_ID:xephyr" -screen 758x987 -cc 4 -dpi 180 -nocursor &
+sleep 3
+export DISPLAY=:1
+/etc/init.d/dbus start &
+su kyle /usr/bin/matchbox-session
+/etc/init.d/dbus stop
+sleep 3

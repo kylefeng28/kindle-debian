@@ -1,0 +1,102 @@
+gtk-cursor-blink = 0
+
+# Global color definitions for use inside style elements
+#
+gtk_color_scheme = "bg_color: #ffffff\nfg_color: #000000\ntitle_grey: #dddddd\nwhite: #ffffff"
+
+gtk-theme-name = "Moko"
+
+# Style for scrollbars
+#
+style "kindle-scrollbar"
+{
+    GtkScrollbar::has-backward-stepper  = 0
+    GtkScrollbar::has-forward-stepper   = 0
+    GtkScrollbar::slider-width          = 20
+    GtkScrollbar::trough-border         = 0
+}
+
+
+# Style for scrolled windows
+#
+style "kindle-scrolled-window"
+{
+    GtkScrolledWindow::scrollbar-spacing = 2
+}
+
+# Style for windows
+#
+style "kindle-window"
+{
+    bg[NORMAL] = @bg_color
+    bg[ACTIVE] = @bg_color
+    bg[PRELIGHT] = @bg_color
+    bg[INSENSITIVE] = @bg_color
+    bg[SELECTED] = @bg_color
+}
+
+# Set touch screen mode, this makes the scroll arrows on menu's work better for touch
+gtk-touchscreen-mode = 1
+
+#
+# Style for Juno Menus
+#
+style "JunoMenu" {
+    bg[NORMAL] = "white"
+    bg[INSENSITIVE] = "white"
+    bg[PRELIGHT] = "white"
+    GtkWidget::scroll-arrow-vlength = 60
+}
+
+style "JunoMenuItem" {
+    bg[NORMAL] = @bg_color
+    bg[ACTIVE] = @bg_color
+    bg[PRELIGHT] = @bg_color
+    bg[INSENSITIVE] = @bg_color
+    bg[SELECTED] = @bg_color
+}
+
+style "JunoLabel" {
+    #font_name = "Helvetica Neue LT 9"
+    fg[NORMAL] = @fg_color
+    fg[ACTIVE] = @fg_color
+    fg[PRELIGHT] = @fg_color
+    fg[INSENSITIVE] = @fg_color
+    fg[SELECTED] = @fg_color
+}
+
+style "JunoEventBox" {
+    bg[NORMAL] = @title_grey
+    bg[ACTIVE] = @title_grey
+    bg[PRELIGHT] = @title_grey
+    bg[INSENSITIVE] = @title_grey
+    bg[SELECTED] = @title_grey
+}
+
+style "JunoCheckButton" {
+   base[NORMAL] = @white
+   base[ACTIVE] = @white
+   base[PRELIGHT] = @white
+   base[INSENSITIVE] = @white
+   base[SELECTED] = @white
+}
+
+style "JunoButton" {
+   base[NORMAL] = @white
+   base[ACTIVE] = @white
+   base[PRELIGHT] = @white
+   base[INSENSITIVE] = @white
+   base[SELECTED] = @white
+}
+
+# Matches
+class "GtkScrollbar" style "kindle-scrollbar"
+class "GtkScrolledWindow" style "kindle-scrolled-window"
+class "GtkWindow" style "kindle-window"
+#class "GtkMenu" style "JunoMenu"
+#class "GtkMenuItem" style "JunoMenuItem"
+#class "GtkLabel" style "JunoLabel"
+#class "GtkCheckButton" style "JunoCheckButton"
+#class "GtkButton" style "JunoButton"
+widget "*.gtk-menu-event-box" style "JunoEventBox"
+
